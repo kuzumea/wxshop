@@ -1,0 +1,40 @@
+<view class="deal-box">
+  <view class="item">
+    交易编号：
+    <view class="title">1231231232323223543</view>
+  </view>
+  <view class="item">
+    商品标题：
+    <view class="title">博弈习题</view>
+  </view>
+  <view class="item">
+    商品单价：
+    <view class="prize">￥ 10</view>
+  </view>
+  <view class="item">
+    购买数量：
+    <view class="title">X1</view>
+  </view>
+  <view class="item">
+    手续费：
+    <view class="title">￥0</view>
+  </view>
+  <view class="item">
+    交易发起时间：
+    <view class="time">2020-09-10 10：25：14</view>
+  </view>
+  <view class="item">
+    交易状态：
+    <view class="deal-status">进行中</view>
+  </view>
+  <view class="item">
+    交易结束时间：
+    <view class="title">未结束</view>
+  </view>
+</view>
+<view class="cbox">
+  <view class="menu" bind:tap="showPopup">看对方联系方式</view>
+  <view class="menu">确认交易完成</view>
+  <view class="menu">查看商品详情</view>
+  <view class="menu1">取消交易</view>
+</view>

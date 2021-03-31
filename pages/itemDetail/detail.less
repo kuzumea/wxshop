@@ -1,0 +1,108 @@
+.detail-box {
+  // background: grey;
+  height: 90vh;
+  .cont {
+    padding: 5rpx 25rpx;
+    border-bottom: 1rpx solid rgb(172, 171, 171);
+    .title{
+      font-size: 46rpx;
+      font-weight: bold;
+      margin-bottom: 15rpx;
+    }
+    .f-title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .saling{
+        // width: 180rpx;
+        height: 60rpx;
+        background: rgb(78, 212, 78); 
+        color: white;
+        padding: 5rpx 5rpx;
+        border-radius: 15rpx;
+      }
+      .price {
+        display: flex;
+        color: red;
+        font-weight: bold;
+        font-size: 40rpx;
+        .f-price {
+          font-size: 30rpx;
+          color: grey;
+          text-decoration: line-through
+
+        }
+      }
+    }
+    .describe {
+      color: rgb(128, 126, 126);
+      margin-bottom: 14rpx;
+    }
+  }
+  .footer {
+    background: white;
+    width: 100%;
+    height: 75rpx;
+    padding: 7rpx;
+    border-top: 1px solid grey;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    .question {
+      // flex: 1;
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      font-size: 30rpx;
+      color: grey;
+    }
+    .deal {
+      // flex: 4;
+      width: 80%;
+      // padding: 0 auto;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      border-radius: 30rpx;
+      color: whitesmoke;
+      margin-right: 8rpx;
+    }
+  }
+
+  .area-question {
+    .q-title {
+      font-weight: 800;
+      padding: 10rpx 20rpx;
+    }
+    .contai-box {
+      background: #efefef;
+      padding: 15rpx;
+      .ly-box {
+        background: white;
+        .user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .user-box {
+            .name {
+              font-weight: bold;
+            }
+            .time {
+              font-size: 30rpx;
+            }
+          }
+          .hf {
+            border: 1px solid black;
+          }        }
+        .ly {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

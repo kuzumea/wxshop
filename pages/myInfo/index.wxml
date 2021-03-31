@@ -1,0 +1,26 @@
+<view class="info">
+  <view class="info-item">
+    <text>头像</text>
+    <van-image   width="40" height="40" src="/pages/images/my/home-bg.jpg"></van-image>
+  </view>
+  <view class="info-item">
+    <text>昵称</text>
+    <text>2xdswxeeasd</text>
+  </view>
+  <view class="info-item">
+    <text>QQ联系方式</text>
+    <text>2323232323</text>
+  </view>
+  <view class="info-item">
+    <text>微信联系方式</text>
+    <text>22xeeasd</text>
+  </view>
+  <view class="info-item">
+    <text>大学</text>
+    <text>攀枝花学院</text>
+  </view>
+</view>
+
+<navigator url="/pages/myInfoEdit/index" class="edit">
+  编辑我的信息
+</navigator>

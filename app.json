@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/browse/index",
+    "pages/publish/index",
+    "pages/message/index",
+    "pages/my/index",
+    "pages/itemDetail/detail",
+    "pages/itemDeal/index",
+    "pages/dealDetail/index",
+    "pages/myInfo/index",
+    "pages/myInfoEdit/index"
+  ],
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./pages/images/tabBar/home_a.png",
+        "selectedIconPath": "./pages/images/tabBar/home.png"
+      },
+      {
+        "pagePath": "pages/browse/index",
+        "text": "浏览",
+        "iconPath": "./pages/images/tabBar/browser_a.png",
+        "selectedIconPath": "./pages/images/tabBar/browser.png"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "text": "发布",
+        "iconPath": "./pages/images/tabBar/publish_a.png",
+        "selectedIconPath": "./pages/images/tabBar/publish.png"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "发布",
+        "iconPath": "./pages/images/tabBar/message.png",
+        "selectedIconPath": "./pages/images/tabBar/message_a.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "./pages/images/tabBar/my_a.png",
+        "selectedIconPath": "./pages/images/tabBar/my.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fbbd08",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

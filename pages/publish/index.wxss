@@ -1,0 +1,43 @@
+.public-container {
+  background: #efefef;
+  overflow: hidden;
+  height: 100vh;
+}
+.public-container .goods_name {
+  margin: 40rpx 0;
+  background: #fff;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35rpx;
+  padding-left: 30rpx;
+}
+.public-container .item {
+  background: #fff;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35rpx;
+  border-bottom: 1px solid #efefef;
+}
+.public-container .item .picker {
+  margin-right: 55rpx;
+}
+.public-container .describe {
+  margin: 10rpx 0;
+  background: #fff;
+}
+.public-container .upload {
+  display: flex;
+  color: #585858;
+  flex-direction: column;
+  background: #fff;
+  margin: 10rpx 0;
+}
+.public-container .upload-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

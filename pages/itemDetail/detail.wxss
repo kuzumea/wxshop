@@ -1,0 +1,97 @@
+.detail-box {
+  height: 90vh;
+}
+.detail-box .cont {
+  padding: 5rpx 25rpx;
+  border-bottom: 1rpx solid #acabab;
+}
+.detail-box .cont .title {
+  font-size: 46rpx;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+.detail-box .cont .f-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-box .cont .f-title .saling {
+  height: 60rpx;
+  background: #4ed44e;
+  color: white;
+  padding: 5rpx 5rpx;
+  border-radius: 15rpx;
+}
+.detail-box .cont .f-title .price {
+  display: flex;
+  color: red;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.detail-box .cont .f-title .price .f-price {
+  font-size: 30rpx;
+  color: grey;
+  text-decoration: line-through;
+}
+.detail-box .cont .describe {
+  color: #807e7e;
+  margin-bottom: 14rpx;
+}
+.detail-box .footer {
+  background: white;
+  width: 100%;
+  height: 75rpx;
+  padding: 7rpx;
+  border-top: 1px solid grey;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.detail-box .footer .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 30rpx;
+  color: grey;
+}
+.detail-box .footer .deal {
+  width: 80%;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  border-radius: 30rpx;
+  color: whitesmoke;
+  margin-right: 8rpx;
+}
+.detail-box .area-question .q-title {
+  font-weight: 800;
+  padding: 10rpx 20rpx;
+}
+.detail-box .area-question .contai-box {
+  background: #efefef;
+  padding: 15rpx;
+}
+.detail-box .area-question .contai-box .ly-box {
+  background: white;
+}
+.detail-box .area-question .contai-box .ly-box .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail-box .area-question .contai-box .ly-box .user .user-box .name {
+  font-weight: bold;
+}
+.detail-box .area-question .contai-box .ly-box .user .user-box .time {
+  font-size: 30rpx;
+}
+.detail-box .area-question .contai-box .ly-box .user .hf {
+  border: 1px solid black;
+}
+.detail-box .area-question .contai-box .ly-box .ly {
+  font-weight: bold;
+}

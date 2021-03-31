@@ -1,0 +1,66 @@
+page {
+  background: #efefef;
+}
+.user-box {
+  position: relative;
+}
+.user-box .user-detail {
+  position: absolute;
+  top: 130rpx;
+  left: 39vw;
+}
+.user-box .user-detail .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.deal-num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  padding: 25rpx 0;
+}
+.deal-num .left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deal-num .left-box .bule {
+  color: #2090ff;
+}
+.deal-num .left-box .size {
+  font-size: 27rpx;
+}
+.deal-num .right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deal-num .right-box .green {
+  color: #71b07d;
+}
+.deal-num .right-box .size {
+  font-size: 27rpx;
+}
+.about {
+  background: #fff;
+  margin: 40rpx 15rpx;
+  border-radius: 15rpx;
+}
+.about .about-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40rpx;
+  padding: 15rpx;
+  border-bottom: 1px solid #efefef;
+}
+.about .about-item .item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

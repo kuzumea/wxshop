@@ -1,0 +1,23 @@
+<view class="deal-box">
+  <view class="item">
+    商品标题：
+    <view class="title">博弈习题</view>
+  </view>
+  <view class="item">
+    商品单价：
+    <view class="prize">￥ 10</view>
+  </view>
+  <view class="item">
+    购买数量：
+    <view class="title">X1</view>
+  </view>
+  <view class="item">
+    手续费：
+    <view class="title">￥0</view>
+  </view>
+</view>
+<view class="confirm">
+  合计：
+  <view class="prize">￥10</view>
+  <navigator url="/pages/dealDetail/index" class="conf">确认交易</navigator>
+</view>
