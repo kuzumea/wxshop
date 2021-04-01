@@ -1,29 +1,28 @@
 <view class="info">
   <view class="info-item">
     <text>头像</text>
-    <van-image   width="40" height="40" src="/pages/images/my/home-bg.jpg"></van-image>
+    <van-image width="40" height="40" src="{{userinfo1.avatar_url}}"></van-image>
   </view>
   <view class="info-item">
     <text>昵称</text>
-    <text>2xdswxeeasd</text>
+    <!-- <text>{{userinfo1.name}}</text> -->
+    <van-field value="{{userinfo1.name || ''}}" input-align="right" border="{{ false }}" bind:change="onChangeName"/>
   </view>
   <view class="info-item">
     <text>QQ联系方式</text>
-    <text>2323232323</text>
+     <van-field value="{{userinfo1.contact_qq || ''}}" input-align="right" border="{{ false }}" bind:change="onChangeqq"/>
   </view>
   <view class="info-item">
     <text>微信联系方式</text>
-    <text>22xeeasd</text>
+     <van-field value="{{userinfo1.contact_wx || ''}}" input-align="right" border="{{ false }}" bind:change="onChangewx"/>
+    
   </view>
   <view class="info-item">
     <text>大学</text>
-    <text>攀枝花学院</text>
+    <!-- <text>攀枝花学院</text> -->
+     <van-field value="{{'攀枝花学院'}}" input-align="right" border="{{ false }}" bind:change="onChangeuni"/>
+    
   </view>
 </view>
-
-<view class="edit">
-  保存辑我的信息
-</view>
-<view class="edit">
-  返回
-</view>
+<view class="edit" bind:tap="saveUserInfo">保存我的信息</view>
+<view class="edit" bind:tap="back">返回</view>

@@ -16,6 +16,15 @@ page {
   flex-direction: column;
   color: #fff;
 }
+.user-box .log {
+  background: #ca5755;
+  color: #fff;
+  position: absolute;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  top: 160rpx;
+  left: 42vw;
+}
 .deal-num {
   display: flex;
   justify-content: space-around;

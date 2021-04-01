@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userinfo1:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+     wx.getStorage({
+      key: 'userInfo',
+      success: (result)=>{
+        this.setData({
+          userinfo1:result.data
+        })
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   },
 
   /**

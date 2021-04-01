@@ -1,23 +1,24 @@
 <scroll-view scroll-y="{{true}}">
   <view class="user-box">
     <van-image src="/pages/images/my/home-bg.jpg" width="100vw" height="40vh"></van-image>
-    <view class="user-detail">
+    <view wx:if="{{isLoged}}" class="user-detail">
       <view class="detail">
         <view class="tx">
-          <van-image round src="/pages/images/my/home-bg.jpg" width="100" height="100"></van-image>
+          <van-image round src="{{userInfo.avatar_url}}" width="100" height="100"></van-image>
         </view>
-        <view class="name">asdasdwx</view>
+        <view class="name">{{userInfo.name}}</view>
         <view class="uni">攀枝花学院</view>
       </view>
     </view>
+    <view wx:else class="log" bind:tap="login">去登陆</view>
   </view>
   <view class="deal-num">
     <view class="left-box">
-      <text class="bule">709</text>
+      <text class="bule">{{userInfo.total_deal}}</text>
       <view class="size">总交易数</view>
     </view>
     <view class="right-box">
-      <text class="green">232</text>
+      <text class="green">{{userInfo.total_pub}}</text>
       <view class="size">总发布商品数</view>
     </view>
   </view>
