@@ -40,27 +40,27 @@ Page({
     let that = this
     // console.log(this.data.userinfo1);
     request(apis.saveInfo, this.data.userinfo1, 'GET').then(res => {
-      if(res.code===200) {
+      if(res.data.code===200) {
         showToast('修改成功!')
-        console.log(that.data.userinfo1);
-        // request(apis.userSearch,this.data.userinfo1.openid,'GET').then(res=>{
-        //   if(res.code === 200) {
-        //     console.log(res);
-        //     // this.setData({
-        //     //   userinfo1:res.data.data
-        //     // })
-        //     wx.setStorage({
-        //       key: 'userInfo',
-        //       data: res.data.data,
-        //     });
-        //     wx.navigateBack({
-        //       delta: 2
-        //     });
-        //   }
-        //   else {
+        // console.log(this.data.userinfo1.openid);
+        let params = {openid:this.data.userinfo1.openid}
+        request(apis.userSearch,params,'GET').then(res=>{
+          // console.log(res);f
+          if(res.data.code === 200) {
+            this.setData({
+              userinfo1:res.data.data
+            })
+            wx.setStorage({
+              key: 'userInfo',
+              data: res.data.data,
+            });
+            
+          }
+          else {
+        showToast('查询失败！')
 
-        //   }
-        // })
+          }
+        })
       }else {
         showToast('修改失败！')
       }

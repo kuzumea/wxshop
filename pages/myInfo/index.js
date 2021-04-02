@@ -12,16 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     wx.getStorage({
-      key: 'userInfo',
-      success: (result)=>{
-        this.setData({
-          userinfo1:result.data
-        })
-      },
-      fail: ()=>{},
-      complete: ()=>{}
-    });
+    
   },
 
   /**
@@ -35,7 +26,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.getStorage({
+      key: 'userInfo',
+      success: (result)=>{
+        this.setData({
+          userinfo1:result.data
+        })
+      },
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   },
 
   /**

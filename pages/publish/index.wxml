@@ -2,43 +2,40 @@
 <scroll-view scroll-y="{{true}}" class="public-container">
   <view class="goods_name">
     <label for="商品名称">商品名称</label>
-    <input type="text" placeholder="请输入商品名称，必填" />
+    <!-- <input type="text" placeholder="请输入商品名称，必填" /> -->
+    <van-field  required value="{{ comodity.title }}" input-align="right" placeholder="请输入商品名称，必填" border="{{ false }}" bind:change="onChangeTitle" />
   </view>
   <view class="item">
     <label for="商品分类">商品分类</label>
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{columns}}">
-      <view class="picker">
-        {{columns[index]}}
-      </view>
+      <view class="picker">{{columns[index]}}</view>
     </picker>
-  </view> 
+  </view>
   <view class="item">
     <label for="商品数量">商品数量</label>
-    <input value="1" type="text"></input>
+    <van-field type="number"  required value="{{ comodity.number }}" input-align="right" placeholder="请输入商品数量，必填" border="{{ false }}" bind:change="onChangeNum" />
   </view>
   <view class="item">
     <label for="商品原价">商品原价</label>
-    <input type="text" placeholder="请输入商品原价，必填" />
+    <van-field type="number" required value="{{ comodity.prize_origin }}" input-align="right" placeholder="请输入商品原价，必填" border="{{ false }}" bind:change="onChangePrizeO" />
   </view>
   <view class="item">
     <label for="商品现价">商品现价</label>
-    <input type="text" placeholder="请输入商品现价，必填" />
+    <van-field type="number" required value="{{ comodity.prize_now }}" input-align="right" placeholder="请输入商品现价，必填" border="{{ false }}" bind:change="onChangePrizeN" />
   </view>
-
   <view class="describe">
-    <textarea placeholder="请输入商品详情介绍，必填" id="" cols="30" rows="10"></textarea>
+    <textarea value="{{comodity.content}}" bindinput="onchangeContent" placeholder="请输入商品详情介绍，必填" id="content" cols="30" rows="10"></textarea>
   </view>
-  
   <view class="upload">
     上传封面图片
-    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+    <van-uploader max-count="1" deletable="{{ true }}" file-list="{{ fileList }}" bind:after-read="afterRead" />
   </view>
-   <view class="upload">
+  <view class="upload">
     上传商品详情图片
-    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+    <van-uploader max-count="3" deletable="{{ true }}" file-list="{{ fileList2 }}" bind:after-read="afterRead1" />
   </view>
   <view class="upload-button">
-    <van-button type="danger" >点击上传</van-button>
-    <van-button type="primary">重置</van-button>
+    <van-button type="danger" bind:tap="upload">点击上传</van-button>
+    <van-button type="primary" bind:tap="reset">重置</van-button>
   </view>
 </scroll-view>

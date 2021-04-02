@@ -115,6 +115,13 @@
 					"id": -1,
 					"name": "pages/myInfoEdit/index",
 					"pathName": "pages/myInfoEdit/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/index",
+					"pathName": "pages/home/index",
 					"scene": null
 				}
 			]
